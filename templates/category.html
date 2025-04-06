@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Kategoria: {{ category }}</h2>
+{% for post in posts %}
+    <div class="post-card">
+        <h3><a href="/post/{{ post[0] }}">{{ post[1] }}</a></h3>
+        <small>{{ post[4] }}</small>
+    </div>
+{% else %}
+    <p>Brak postów w tej kategorii.</p>
+{% endfor %}
+{% endblock %}
