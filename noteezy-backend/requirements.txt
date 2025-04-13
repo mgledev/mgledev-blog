@@ -1,0 +1,11 @@
+
+flask
+flask-cors
+flask-sqlalchemy
+flask-limiter
+transformers
+torch
+Pillow
+fpdf
+langdetect
+python-dotenv
